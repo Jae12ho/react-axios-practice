@@ -66,7 +66,7 @@ const Rest = () => {
         <button onClick={() => {getHandle()}}>GET</button>
       </div>
       {text.map((e) => (
-        <div>
+        <div key={e.id}>
           <span>
             {e.id}번, {e.title}, {e.content}, {e.update_at}
           </span>
